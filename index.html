@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Splitter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Splitter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="app-container">
-        <h1>Tip Splitter</h1>
-        
-        <form id="calculator-form">
-            <div class="input-group">
-                <label for="bill">Bill Amount ($)</label>
-                <input type="number" id="bill" step="0.01" min="0" placeholder="0.00" required>
-            </div>
-            
-            <div class="input-group">
-                <label for="tip">Tip Percentage (%)</label>
-                <input type="number" id="tip" step="1" min="0" value="15" required>
-            </div>
-            <form id="calculator-form">
-  <div class="input-group">
-    <label for="bill">Bill Amount ($)</label>
-    <input type="number" id="bill" step="0.01" min="0" placeholder="0.00" required>
-  </div>
+  <main class="app-container">
+    <h1>Tip Splitter</h1>
 
-  <div class="input-group">
-    <label for="tip">Tip Percentage (%)</label>
-    <input type="number" id="tip" step="1" min="0" value="15" required>
-  </div>
+    <form id="calculator-form">
+      <div class="input-group">
+        <label for="bill">Bill Amount ($)</label>
+        <input type="number" id="bill" step="0.01" min="0" placeholder="0.00" required>
+      </div>
 
-  <div class="input-group">
-    <label for="people">Number of People</label>
-    <input type="number" id="people" step="1" min="1" value="1" required>
-  </div>
+      <div class="input-group">
+        <label for="tip">Tip Percentage (%)</label>
+        <input type="number" id="tip" step="1" min="0" value="15" required>
+      </div>
 
-  <p id="error-message" class="error-text" aria-live="polite"></p>
+      <div class="input-group">
+        <label for="people">Number of People</label>
+        <input type="number" id="people" step="1" min="1" value="1" required>
+      </div>
 
-  <div class="button-group">
-    <button type="submit" id="calculate-btn">Calculate</button>
-    <button type="reset" id="reset-btn">Reset</button>
-  </div>
-</form>
-            <div class="input-group">
-                <label for="people">Number of People</label>
-                <input type="number" id="people" step="1" min="1" value="1" required>
-            </div>
-            <p id="error-message" class="error-text" aria-live="polite"></p>
-            <button type="submit" id="calculate-btn">Calculate</button>
-        </form>
+      <p id="error-message" class="error-text" aria-live="polite"></p>
 
-        <section class="results">
-            <div class="result-row">
-                <span>Total Tip:</span>
-                <span id="total-tip">$0.00</span>
-            </div>
-            <div class="result-row">
-                <span>Total Bill:</span>
-                <span id="total-bill">$0.00</span>
-            </div>
-            <div class="result-row highlight">
-                <span>Amount Per Person:</span>
-                <span id="per-person">$0.00</span>
-            </div>
-        </section>
-    </main>
+      <div class="button-group">
+        <button type="submit" id="calculate-btn">Calculate</button>
+        <button type="reset" id="reset-btn">Reset</button>
+      </div>
+    </form>
 
-    <script src="script.js"></script>
+    <section class="results">
+      <div class="result-row">
+        <span>Total Tip:</span>
+        <span id="total-tip">$0.00</span>
+      </div>
+      <div class="result-row">
+        <span>Total Bill:</span>
+        <span id="total-bill">$0.00</span>
+      </div>
+      <div class="result-row highlight">
+        <span>Amount Per Person:</span>
+        <span id="per-person">$0.00</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

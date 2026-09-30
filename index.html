@@ -20,7 +20,29 @@
                 <label for="tip">Tip Percentage (%)</label>
                 <input type="number" id="tip" step="1" min="0" value="15" required>
             </div>
-            
+            <form id="calculator-form">
+  <div class="input-group">
+    <label for="bill">Bill Amount ($)</label>
+    <input type="number" id="bill" step="0.01" min="0" placeholder="0.00" required>
+  </div>
+
+  <div class="input-group">
+    <label for="tip">Tip Percentage (%)</label>
+    <input type="number" id="tip" step="1" min="0" value="15" required>
+  </div>
+
+  <div class="input-group">
+    <label for="people">Number of People</label>
+    <input type="number" id="people" step="1" min="1" value="1" required>
+  </div>
+
+  <p id="error-message" class="error-text" aria-live="polite"></p>
+
+  <div class="button-group">
+    <button type="submit" id="calculate-btn">Calculate</button>
+    <button type="reset" id="reset-btn">Reset</button>
+  </div>
+</form>
             <div class="input-group">
                 <label for="people">Number of People</label>
                 <input type="number" id="people" step="1" min="1" value="1" required>
